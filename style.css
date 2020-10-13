@@ -1,0 +1,308 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* fixed-close */
+.fixed-close {
+  height: 50px;
+  width: 50px;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  position: relative;
+  margin: 0;
+  border: 1px solid #2f2f2f;
+}
+.fixed-close img {
+  width: 12px;
+  position: absolute;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-fixed {
+  position: fixed;
+  margin-top: 900px;
+  margin-left: 80%;
+  z-index: 1;
+}
+@media (min-width: 414px) {
+  .main-fixed {
+    margin-left: 85%;
+  }
+}
+@media (min-width: 532px) {
+  .main-fixed {
+    margin-left: 87%;
+  }
+}
+@media (min-width: 777px) {
+  .main-fixed {
+    margin-top: 40px;
+    margin-left: 90%;
+  }
+}
+@media (min-width: 777px) {
+  .main-fixed {
+    margin-left: 92%;
+  }
+}
+@media (min-width: 1150px) {
+  .main-fixed {
+    margin-left: 93%;
+  }
+}
+
+@media (min-width: 1650px) {
+  .main-fixed {
+    margin-left: 95%;
+  }
+}
+
+/* hero-image */
+.hero-image {
+  background-image: url("images/Powerhouse-Company-Scarab-Chair-01.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 160vw;
+  position: relative;
+}
+
+.hero-image-text {
+  position: absolute;
+  top: 10%;
+  left: 8%;
+  color: #ffffff;
+  font-family: sans-serif;
+}
+.hero-image-text h6 {
+  font-size: 18px;
+  color: #d8d6d6;
+}
+.hero-image-text h1 {
+  padding-top: 20px;
+  font-weight: 100;
+  font-size: 40px;
+}
+@media (min-width: 777px) {
+  .hero-image-text h6 {
+    font-size: 20px;
+  }
+  .hero-image-text h1 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 1027px) {
+  .hero-image-text h6 {
+    font-size: 25px;
+  }
+  .hero-image-text h1 {
+    font-size: 60px;
+  }
+  .hero-image-text {
+    top: 2%;
+    left: 3%;
+  }
+  .hero-image {
+    height: 100vw;
+  }
+}
+@media (min-width: 1212px) {
+  .hero-image-text h6 {
+    font-size: 30px;
+  }
+  .hero-image-text h1 {
+    font-size: 90px;
+  }
+}
+@media (min-width: 1600px) {
+  .hero-image-text h6 {
+    font-size: 50px;
+  }
+  .hero-image-text h1 {
+    font-size: 120px;
+  }
+}
+/* main */
+main {
+  padding: 100px 6%;
+}
+.border {
+  width: 85vw;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+.two-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 0px;
+  align-items: center;
+}
+.columns {
+  font-family: sans-serif;
+  font-weight: 100;
+  padding: 10px 0px;
+  font-size: 18px;
+}
+.columns h5 {
+  color: #2f2f2f;
+  font-weight: bold;
+}
+.columns h6 {
+  color: #888888;
+  font-size: 14px;
+  font-weight: 100;
+}
+@media (min-width: 1003px) {
+  .two-columns {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .columns h5 {
+    font-size: 20px;
+  }
+  .columns h6 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 1003px) {
+  .columns h5 {
+    font-size: 27px;
+  }
+  .columns h6 {
+    font-size: 24px;
+  }
+}
+/* first-section */
+.first-section {
+  padding: 30px 5%;
+}
+.first-section-hero {
+  background-image: linear-gradient(
+      rgba(20, 27, 85, 0.8),
+      rgba(20, 27, 85, 0.8)
+    ),
+    url("images/Powerhouse-Company-Scarab-Chair-01\ \(1\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 40vh;
+  position: relative;
+}
+.first-section-hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: sans-serif;
+  color: #fff;
+}
+.first-section-hero-text h1 {
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.6;
+}
+.first-section-hero-text h6 {
+  padding: 30px 0px;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+@media (min-width: 500px) {
+  .first-section-hero {
+    height: 60vh;
+  }
+  .first-section-hero-text h1 {
+    font-size: 20px;
+  }
+  .first-section-hero-text h6 {
+    font-size: 16px;
+  }
+}
+@media (min-width: 800px) {
+  .first-section-hero {
+    height: 80vh;
+  }
+  .first-section-hero-text h1 {
+    font-size: 22px;
+  }
+  .first-section-hero-text h6 {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  .first-section-hero {
+    height: 100vh;
+  }
+  .first-section-hero-text h1 {
+    font-size: 24px;
+  }
+  .first-section-hero-text h6 {
+    font-size: 20px;
+  }
+}
+/* second-section */
+.second-section {
+  padding: 30px 6%;
+  font-family: sans-serif;
+}
+.second-border {
+  width: 85vw;
+  height: 2px;
+  border-radius: 5px;
+  background-color: #d9d9d9;
+}
+.second-section-title h1 {
+  padding: 20px 0px 60px 0px;
+  color: #000000;
+  font-weight: 100;
+  font-size: 25px;
+}
+.second-section-image img {
+  width: 85vw;
+  height: auto;
+}
+.second-section-footer h1 {
+  padding: 30px 0px 15px 0px;
+  font-weight: 100;
+}
+
+.second-section-footer h6 {
+  font-size: 18px;
+  color: #8e8e8e;
+  font-weight: 100;
+}
+@media (min-width: 778px) {
+  .second-flex {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .second-section-image img {
+    width: 40vw;
+    height: auto;
+  }
+  .second-section-footer {
+    order: 1;
+  }
+  .second-section-image {
+    order: 2;
+  }
+}
+@media (min-width: 1220px) {
+  .first-flex {
+    display: flex;
+    justify-content: space-between;
+  }
+  .second-section-footer h1 {
+    padding: 20px 0px 15px 0px;
+  }
+  .second-section-image img {
+    width: 350px;
+    height: auto;
+    padding-top: 20px;
+  }
+}
